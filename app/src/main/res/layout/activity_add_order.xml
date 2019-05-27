@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="@dimen/card_margin"
+        android:layout_margin="@dimen/card_margin"
+        android:orientation="vertical">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/buyer_name_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:inputType="textPersonName"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/buyerNameEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/buyer_phone_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/buyerPhoneEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="number"
+            android:digits="1234567890."
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/totalEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/due_date_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/dueDateEditText"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/addressEditText"
+            android:maxLines="100"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_full"
+            android:padding="@dimen/title_padding"
+            android:layout_margin="@dimen/card_margin"
+            android:textSize="@dimen/sizeTitle"
+            android:textColor="@color/white"
+            android:text="@string/add_order_btn_text"
+            android:id="@+id/placeOrderButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_delete"
+            android:padding="@dimen/title_padding"
+            android:layout_margin="@dimen/card_margin"
+            android:textSize="@dimen/sizeTitle"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="@string/delete_order_btn_text"
+            android:id="@+id/deleteOrderButton"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

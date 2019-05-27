@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="@dimen/card_margin"
+        android:layout_margin="@dimen/card_margin"
+        android:orientation="vertical">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:inputType="textPersonName"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/firstNameEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:inputType="textPersonName"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/lastNameEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="textEmailAddress"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/emailEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/passwordEditText"
+            />
+
+
+        <CheckBox
+        android:checked="true"
+        android:id="@+id/termsCheckbox"
+        android:text="@string/terms_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_full"
+            android:padding="@dimen/title_padding"
+            android:layout_margin="@dimen/card_margin"
+            android:textSize="@dimen/sizeTitle"
+            android:textColor="@color/white"
+            android:text="@string/register_btn_text"
+            android:id="@+id/registerButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:padding="@dimen/card_margin"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/loginTextview"
+            android:text="@string/login_label_text"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

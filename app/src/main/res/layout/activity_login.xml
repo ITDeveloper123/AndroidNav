@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_margin"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/card_margin"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/card_margin"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/card_margin"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:gravity="center_horizontal"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="textEmailAddress"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/emailEditText"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:textSize="@dimen/sizeTitle"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/title_padding"
+            android:id="@+id/passwordEditText"
+            />
+
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/rememberMeCheckbox"
+            android:text="@string/remember_me_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_full"
+            android:padding="@dimen/title_padding"
+            android:layout_margin="@dimen/card_margin"
+            android:textSize="@dimen/sizeTitle"
+            android:textColor="@color/white"
+            android:text="@string/login_btn_text"
+            android:id="@+id/loginButton"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin"
+                android:padding="@dimen/card_margin"
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/registerTextview"
+                android:text="@string/register_label_text"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

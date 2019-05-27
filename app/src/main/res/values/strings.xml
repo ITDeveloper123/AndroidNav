@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">OrderAndroidDemo</string>
+    <string name="title_activity_order_list">Order List</string>
+    <string name="title_activity_add_order">Add Order</string>
+    <string name="title_activity_edit_order">Edit Order</string>
+    <string name="title_activity_signup">Register</string>
+
+    <string name="buyer_name_hint">Buyer Name</string>
+    <string name="buyer_phone_hint">Buyer Phone</string>
+    <string name="total_hint">Total</string>
+    <string name="due_date_hint">Order Due Date</string>
+    <string name="address_hint">Buyer Address</string>
+    <string name="add_order_btn_text">Add Order</string>
+    <string name="edit_order_btn_text">Edit Order</string>
+    <string name="delete_order_btn_text">Cancel Order</string>
+    <string name="tracking_enabled_notif">Tracking is currently enabled. Tap to cancel.</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="terms_hint">I agree to terms and conditions</string>
+    <string name="email_hint">Email</string>
+    <string name="remember_me_hint">Remember Me</string>
+    <string name="user_hint">User Name</string>
+    <string name="failed_registration">Couldn\'t be able to register the user.Please try Again!!!</string>
+    <string name="failed_login">Couldn\'t be able to login the user.Please try Again!!!</string>
+    <string name="successful_login">Couldn\'t be able to login the user.Please try Again!!!</string>
+    <string name="successful_register">User is successfully registered.Please sign in to Proceed.</string>
+
+    <string name="password_hint">Password</string>
+    <string name="logout">Log out</string>
+    <string name="register_btn_text">Register</string>
+    <string name="login_btn_text">Login</string>
+    <string name="register_label_text"><u>Don\'t have an account yet? Register here</u></string>
+    <string name="login_label_text"><u>Already have an account yet? Login</u></string>
+
+    <string name="test_email">test@test.com</string>
+    <string name="test_password">testpassword</string>
+    <string name="firebase_path">location</string>
+
+    <string name="invalid_phone_number">Please enter a valid phone number</string>
+    <string name="invalid_name">Please enter buyer name to proceed</string>
+    <string name="invalid_order">Please enter total price of order to proceed</string>
+    <string name="invalid_address">Please enter address to proceed</string>
+    <string name="invalid_first_name">Please enter first name to proceed</string>
+    <string name="invalid_last_name">Please enter last name to proceed</string>
+    <string name="invalid_email">Please enter valid email to proceed</string>
+    <string name="invalid_password">Please enter valid password to proceed</string>
+    <string name="min_password">Please enter a password of length 6 to proceed</string>
+    <string name="terms_alert">Please agree to terms and conditions</string>
+
+</resources>
